@@ -1,0 +1,22 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <h1>To List your place please fill these details</h1>
+    <form action="http://localhost:8080/listings/<%=data.id%>/update?_method=PUT" method="POST">
+        <input type="text" value="<%=data.title%>" placeholder="Title" name="title">
+        <br><br>
+        <input type="text" value="<%=data.image%>" placeholder="Image URL" name="image">
+        <br><br>
+        <textarea rows="7" cols="35" placeholder="Discription" name="discription"><%=data.description%></textarea>
+        <br><br>
+        <input type="number" value="<%=data.price%>" placeholder="Price" name="price">
+        <br><br>
+        <input type="text" value="<%=data.location%>" placeholder="Location" name="location">
+        <br><br>
+        <input type="text" value="<%=data.country%>" placeholder="Country" name="name">
+        <br><br>
+        <button>UPDATE</button>
+    </form>
+</body>
+
+</html>

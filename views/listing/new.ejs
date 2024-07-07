@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour with us</title>
+</head>
+
+<body>
+    <h1>To List your place please fill these details</h1>
+    <form action="http://localhost:8080/listings" method="POST">
+        <input type="text" name="listing[title]" placeholder="Title">
+        <br><br>
+        <input type="text" placeholder="Image URL" name="listing[image]">
+        <br><br>
+        <input type="text" name="listing[discription]" placeholder="Discription">
+        <br><br>
+        <input type="number" name="listing[price]" placeholder="Price">
+        <br><br>
+        <input type="text" name="listing[location]" placeholder="Loation">
+        <br><br>
+        <input type="text" name="listing[country]" placeholder="Country">
+        <br><br>
+        <button>Create</button>
+    </form>
+</body>
+
+</html>
